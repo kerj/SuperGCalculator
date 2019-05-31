@@ -22,21 +22,30 @@ export function planetAge(planet, bday) {
     case "Earth":
       let earthAge = millieToYears(bday);
       return earthAge;
-    break;
     case "Mercury":
       let mercuryAge = Math.round((millieToYears(bday)/.24));
       return mercuryAge;
-    break;
     case "Venus":
       let venusAge = Math.round((millieToYears(bday)/.62));
       return venusAge;
-    break;
     case "Mars":
       let marsAge = Math.round((millieToYears(bday)/1.88));
       return marsAge;
-    break;
     case "Jupiter":
       let jupiterAge = Math.round((millieToYears(bday)/11.86));
       return jupiterAge;
+  }
+}
+
+export function lifeExpectancyChecker(bday) {
+  let ageVsExpectancy = (78-millieToYears(bday));
+  if (ageVsExpectancy < 0) {
+    let remainingYears = Math.abs(ageVsExpectancy);
+    return remainingYears;
+  }else if (ageVsExpectancy > 0) {
+    return ageVsExpectancy;
+  }else {
+    let exactAgeExpectancy = "You have reached the average age!!";
+    return exactAgeExpectancy;
   }
 }
