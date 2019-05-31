@@ -1,7 +1,4 @@
-import { ageInMillie } from '../src/galacticAge.js';
-import { millieToYears } from '../src/galacticAge.js';
-import { planetAge } from '../src/galacticAge.js';
-import { lifeExpectancyChecker } from '../src/galacticAge.js';
+import { PersonProfile } from '../src/galacticAge.js';
 
 test('returns the number of millieseconds from since a date object', () => {
   let testVar = ageInMillie('1992-5-1');
