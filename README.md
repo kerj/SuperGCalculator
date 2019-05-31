@@ -22,7 +22,7 @@ _This program will take in a javascript date object as year, month, day and conv
 | ------------- |:-------------:| -----:|
 | User inputs age in years and finds milliseconds age | "27" | "8.515e+11" |
 | program will convert milliseconds to years  | "8.515e+11" | "27" |
-| program will be able to convert to other planets time units for age (ie.Mars) | "27" | "50" |
+| program will be able to convert to other planets time units for age (ie.Mars) | "27" | "14" |
 | Program will find expected remaining years for person to live based on planets and current age (ie.Earth) | "27" | "51" |
 | If user age is past life expectancy, return number of years they have lived beyond it | "100" | "22" |
 
